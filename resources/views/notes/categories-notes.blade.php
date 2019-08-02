@@ -3,7 +3,9 @@
 @section('main')
 
 
-
+@section('title')
+    Notes in {{ $catt->name }}
+@endsection
 
 
 

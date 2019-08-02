@@ -22,6 +22,19 @@ Route::group(['prefix' => 'shop', 'middleware'=>'auth'], function () {
 });
 
 
+Route::group(['prefix' => 'user', 'middleware'=>'auth'], function () {
+    Route::get('profile', 'ProfileController@index')->name('profile');
+    Route::post('updateprofile', 'ProfileController@updateprofile')->name('updateprofile');
+});
+
+
+Route::group(['prefix' => 'notes', 'middleware'=>'auth'], function () {
+    Route::get('addnotes', 'NoteController@addnotes')->name('addnotes');
+    Route::post('storenotes', 'NoteController@storenotes')->name('storenotes');
+});
+
+
+
 
 
 

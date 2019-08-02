@@ -1,7 +1,10 @@
 @extends('layouts.frontend')
 
-@section('main')
-@extends('layouts.frontend')
+
+@section('title')
+    Thank You
+@endsection
+
 
 
 @section('main')
@@ -107,7 +110,5 @@
         </div><!-- container // -->
         </section>
         <!-- ========================= SECTION CONTENT .END// ========================= -->
-
-@endsection
 
 @endsection

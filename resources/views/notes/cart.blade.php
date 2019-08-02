@@ -1,5 +1,9 @@
 @extends('layouts.frontend')
 
+@section('title')
+    Cart
+@endsection
+
 @section('main')
 
 

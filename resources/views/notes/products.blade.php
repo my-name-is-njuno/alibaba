@@ -1,5 +1,11 @@
 @extends('layouts.frontend')
 
+
+@section('title')
+    All Notes
+@endsection
+
+
 @section('main')
 
 

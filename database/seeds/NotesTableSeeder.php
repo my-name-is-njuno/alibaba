@@ -22,6 +22,7 @@ class NotesTableSeeder extends Seeder
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
             'cat_id'=>1,
+            'user_id'=>1,
         ]);
 
 
@@ -33,6 +34,7 @@ class NotesTableSeeder extends Seeder
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
             'cat_id'=>1,
+            'user_id'=>1,
         ]);
 
 
@@ -44,6 +46,7 @@ class NotesTableSeeder extends Seeder
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
             'cat_id'=>1,
+            'user_id'=>1,
         ]);
 
 
@@ -55,6 +58,7 @@ class NotesTableSeeder extends Seeder
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
             'cat_id'=>1,
+            'user_id'=>1,
         ]);
 
 
@@ -64,7 +68,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -75,7 +80,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -86,7 +92,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -97,7 +104,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -111,7 +119,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -123,7 +132,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -135,7 +145,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -156,7 +167,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>3
+            'cat_id'=>3,
+            'user_id'=>1,
         ]);
 
 
@@ -168,7 +180,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>3
+            'cat_id'=>3,
+            'user_id'=>1,
         ]);
 
 
@@ -180,7 +193,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>3
+            'cat_id'=>3,
+            'user_id'=>1,
         ]);
 
 
@@ -191,7 +205,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>3
+            'cat_id'=>3,
+            'user_id'=>1,
         ]);
 
 
@@ -203,7 +218,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>4
+            'cat_id'=>4,
+            'user_id'=>1,
         ]);
 
 
@@ -215,7 +231,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>4
+            'cat_id'=>4,
+            'user_id'=>1,
         ]);
 
 
@@ -230,7 +247,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>4
+            'cat_id'=>4,
+            'user_id'=>1,
         ]);
 
 
@@ -242,7 +260,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -254,7 +273,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>5
+            'cat_id'=>5,
+            'user_id'=>1,
         ]);
 
 
@@ -267,7 +287,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>3
+            'cat_id'=>3,
+            'user_id'=>1,
         ]);
 
 
@@ -279,7 +300,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>2
+            'cat_id'=>2,
+            'user_id'=>1,
         ]);
 
 
@@ -291,7 +313,8 @@ class NotesTableSeeder extends Seeder
             'details' => 'For those running MariaDB or older versions of MySQL you may hit this error when trying to run migrations',
             'price' => 400,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-            'cat_id'=>4
+            'cat_id'=>4,
+            'user_id'=>1,
         ]);
     }
 }

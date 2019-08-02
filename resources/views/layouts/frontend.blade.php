@@ -5,7 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Bootstrap-ecommerce by Vosidiy">
 
-<title>Ecommerce For Notes </title>
+<title>
+
+    @yield('title')
+
+</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}">
 
@@ -94,7 +98,7 @@ $(document).ready(function() {
                 <div class="row-sm align-items-center">
                     <div class="col-lg-4-24 col-sm-3">
 
-                        Welcome
+                        <a href="{{ route('addnotes') }}" class="btn btn-primary ">Upload Notes</a>
                     {{-- <div class="category-wrap dropdown py-1">
                         <button type="button" class="btn btn-light  dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-bars"></i> Categories</button>
                         <div class="dropdown-menu">
@@ -146,12 +150,19 @@ $(document).ready(function() {
                                             <div class="dropdown-menu">
 
 
+                                                    
+                                                    <a class="dropdown-item" href="{{ route('profile') }}">
+                                                        Profile
+                                                    </a>
 
                                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                                         onclick="event.preventDefault();
                                                                         document.getElementById('logout-form').submit();">
                                                             {{ __('Logout') }}
                                                         </a>
+
+
+                                                    
 
                                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                                             @csrf
@@ -178,20 +189,8 @@ $(document).ready(function() {
                                                 </div>
                                             </a>
                                             <div class="dropdown-menu">
-                                                <form class="px-4 py-3">
-                                                    <div class="form-group">
-                                                    <label>Email address</label>
-                                                    <input type="email" class="form-control" placeholder="email@example.com">
-                                                    </div>
-                                                    <div class="form-group">
-                                                    <label>Password</label>
-                                                    <input type="password" class="form-control" placeholder="Password">
-                                                    </div>
-                                                    <button type="submit" class="btn btn-primary">Sign in</button>
-                                                    </form>
-                                                    <hr class="dropdown-divider">
-                                                    <a class="dropdown-item" href="#">Have account? Sign up</a>
-                                                    <a class="dropdown-item" href="#">Forgot password?</a>
+                                               <a class="dropdown-item" href="{{ route('login') }}">Login</a>
+                                               <a class="dropdown-item" href="{{ route('register') }}">Register</a>        
                                             </div> <!--  dropdown-menu .// -->
                                         </div>  <!-- widget-header .// -->
 

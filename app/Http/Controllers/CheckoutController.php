@@ -17,7 +17,13 @@ class CheckoutController extends Controller
 {
     public function checkout()
     {
-        return view('notes/checkout');
+        if(Cart::count() > 0) {
+            return view('notes/checkout');
+        } else {
+            Session::flash('info', 'Your cart is empty, add notes to checkout');
+            return back();
+        }
+
     }
 
     public function stripecheckout(Request $r)

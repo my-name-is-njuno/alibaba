@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 
 use App\Cat;
+use App\Country;
 
 use Illuminate\Support\Facades\Schema;
 

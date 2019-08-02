@@ -1,5 +1,13 @@
 @extends('layouts.frontend')
 
+
+
+@section('title')
+	Welcome
+@endsection
+
+
+
 @section('main')
 
 

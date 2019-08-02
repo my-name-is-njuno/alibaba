@@ -1,6 +1,10 @@
 
 @extends('layouts.frontend')
 
+@section('title')
+    Checkout
+@endsection
+
 @section('extracss')
 <link rel="stylesheet" href="{{ asset('css/stripe.css') }}">
 @endsection

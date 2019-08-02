@@ -1,5 +1,8 @@
 @extends('layouts.frontend')
 
+@section('title')
+    {{ $note->name }}
+@endsection
 
 @section('main')
 <!-- ========================= SECTION CONTENT ========================= -->
@@ -8,9 +11,9 @@
         <nav class="mb-3">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Category name</a></li>
-                <li class="breadcrumb-item"><a href="#">Sub category</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Items</li>
+                <li class="breadcrumb-item"><a href="#">{{ $note->cat->name }}</a></li>
+               
+                <li class="breadcrumb-item active" aria-current="page">{{ $note->name }}</li>
             </ol>
         </nav>
 
@@ -26,7 +29,7 @@
             <div class="img-big-wrap">
                 <div>
                     <a href="images/items/1.jpg" data-fancybox="">
-                        <img src="images/items/1.jpg">
+                        <img src="{{ asset('notes/coverimages/'.$note->coverimage) }}">
                     </a>
                 </div>
             </div>
@@ -65,14 +68,14 @@
           <dd><p>{{ $note->details }} </p></dd>
         </dl>
         <dl class="row">
-          <dt class="col-sm-3">Model#</dt>
-          <dd class="col-sm-9">12345611</dd>
+          <dt class="col-sm-3">Pages#</dt>
+          <dd class="col-sm-9">{{ $note->pages }} pages</dd>
 
-          <dt class="col-sm-3">Color</dt>
-          <dd class="col-sm-9">Black and white </dd>
+          <dt class="col-sm-3">Type</dt>
+          <dd class="col-sm-9">{{ $note->doctype }} Document</dd>
 
           <dt class="col-sm-3">Delivery</dt>
-          <dd class="col-sm-9">Russia, USA, and Europe </dd>
+          <dd class="col-sm-9">By Mail and Simple Download </dd>
         </dl>
         <div class="rating-wrap">
 
