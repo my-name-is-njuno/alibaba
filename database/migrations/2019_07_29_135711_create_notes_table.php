@@ -27,6 +27,7 @@ class CreateNotesTable extends Migration
             $table->string('coverimage')->default('coverimage.jpg');
             $table->string('doctype')->default('pdf');
             $table->integer('pages')->default(0);
+            $table->integer('views')->default(0);
             $table->timestamps();
         });
     }

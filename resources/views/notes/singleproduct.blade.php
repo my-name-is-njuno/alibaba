@@ -19,7 +19,8 @@
 
         <div class="row">
         <div class="col-xl-10 col-md-9 col-sm-12">
-
+        
+            @include('layouts/frontend-message')
 
         <main class="card">
             <div class="row no-gutters">
@@ -29,7 +30,7 @@
             <div class="img-big-wrap">
                 <div>
                     <a href="images/items/1.jpg" data-fancybox="">
-                        <img src="{{ asset('notes/coverimages/'.$note->coverimage) }}">
+                        <img src="{{ asset('notes/coverimages/'.$note->coverimage) }}" class="img-thumbnail">
                     </a>
                 </div>
             </div>
@@ -91,8 +92,8 @@
                     <i class="fa fa-star"></i>
                 </li>
             </ul>
-            <div class="label-rating">132 reviews</div>
-            <div class="label-rating">154 orders </div>
+            <div class="label-rating ml-2">{{ $note->reviews->count() }} reviews</div>
+            <div class="label-rating">{{ $note->views }} views </div>
         </div> <!-- rating-wrap.// -->
         <hr>
             <div class="row">
@@ -131,13 +132,18 @@
 
             <hr>
 
-
-
+            @if (Auth::user() && Auth::user()->id == $note->user_id)
+                <a href="{{ route('editnotes', ['slug'=>$note->slug]) }}" class="btn  btn-info"> <i class="fa fa-edit"></i> Edit Note Info </a>
+                <a href="{{ route('deletenotes', ['slug'=>$note->slug]) }}" class="btn  btn-danger"> <i class="fa fa-trash"></i> Remove Notes </a>
+            @else
             <form action="{{ route('cart', ['note'=>$note]) }}" method="post">
-                    @csrf
-                    <a href="#" class="btn  btn-warning"> <i class="fa fa-envelope"></i> Contact Supplier </a>
-                    <button  class="btn  btn-outline-warning" type="submit"> Add to Cart </a>
+                @csrf
+                <a href="#" class="btn  btn-warning"> <i class="fa fa-envelope"></i> Contact Supplier </a>
+                <button  class="btn  btn-outline-warning" type="submit"> Add to Cart </a>
             </form>
+            @endif
+
+            
 
         <!-- short-info-wrap .// -->
         </article> <!-- card-body.// -->
@@ -154,6 +160,54 @@
         </article> <!-- card.// -->
 
         <!-- PRODUCT DETAIL .// -->
+
+
+
+        <article class="card mt-3">
+            <div class="card-body">
+                <h4>Reviews (0)</h4>
+                @auth
+                    
+                
+                @if (Auth::user()->id != $note->user_id)
+                    <form method="post" action="{{ route('storereview') }}">
+                        @csrf
+                        <input type="hidden" name="note_id" value="{{ $note->id }}">
+
+                        <div class="form-group">
+                          <label for="">Review Notes</label>
+                          <textarea name="review" id="review" class="form-control" placeholder="" aria-describedby="helpId">
+
+                          </textarea>
+                          <button type="submit" class="btn btn-primary mt-3">Submit Review</button>
+                        </div>
+                    </form>
+
+                    <hr>
+                    <div class="row">
+                        
+                        @forelse ($note->reviews as $rv)
+                            <div class="media m-5">
+                                <img class="align-self-center mr-3" src="{{ asset('images/avatars/thumbnails/'.$rv->user->avatar) }}" alt="" width="70px" height="70px">
+                                <div class="media-body">
+                                  <h5 class="mt-0">{{ $rv->user->name }}</h5>
+                                  <p>{{ $rv->review }}</p>
+                                  
+                                </div>
+                              </div>
+                              
+                        @empty
+
+                              <p class="lead mx-auto">No Reviews Yet</p>
+                            
+                        @endforelse
+
+                    </div>
+                @endif
+
+                @endauth
+            </div> <!-- card-body.// -->
+        </article> 
 
         </div> <!-- col // -->
         <aside class="col-xl-2 col-md-3 col-sm-12">

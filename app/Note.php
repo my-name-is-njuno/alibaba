@@ -12,6 +12,11 @@ class Note extends Model
         return $this->belongsTo('App\Cat');
     }
 
+    public function reviews()
+    {
+        return $this->hasMany('App\Review');
+    }
+
     public function user()
     {
         return $this->belongsTo('App\User');

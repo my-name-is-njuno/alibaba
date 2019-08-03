@@ -50,8 +50,17 @@ class User extends Authenticatable
     }
 
 
+    public function reviews()
+    {
+        return $this->hasMany('App\Review');
+    }
+
+
     public function country()
     {
         return $this->belongsTo('App\Country');
     }
+
+
+    
 }

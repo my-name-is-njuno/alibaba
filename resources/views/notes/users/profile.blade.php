@@ -22,6 +22,8 @@
             
                  <div class="card">
 
+                    @include('layouts/frontend-message')
+
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item">
                         <a class="nav-link active" id="info-div-tab" data-toggle="tab" href="#info-div" role="tab" aria-controls="info-div" aria-selected="true">Profile Info</a>

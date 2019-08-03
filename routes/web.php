@@ -30,7 +30,15 @@ Route::group(['prefix' => 'user', 'middleware'=>'auth'], function () {
 
 Route::group(['prefix' => 'notes', 'middleware'=>'auth'], function () {
     Route::get('addnotes', 'NoteController@addnotes')->name('addnotes');
+    Route::get('editnotes/{slug}', 'NoteController@editnotes')->name('editnotes');
+    Route::get('downloadforedit/{slug}', 'NoteController@downloadforedit')->name('downloadforedit');
+    Route::post('updatenotes/{id}', 'NoteController@updatenotes')->name('updatenotes');
+
+    Route::get('deletenotes/{slug}', 'NoteController@deletenotes')->name('deletenotes');
     Route::post('storenotes', 'NoteController@storenotes')->name('storenotes');
+
+    Route::post('storereview', 'ReviewController@storereview')->name('storereview');
+
 });
 
 
