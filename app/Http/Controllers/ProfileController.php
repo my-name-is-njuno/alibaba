@@ -51,8 +51,8 @@ class ProfileController extends Controller
 
             $thumbnailImage->save($thumbnailPath.$avatar); 
 
-             if(File::exists($prev_avatar)){File::delete($prev_avatar);}
-             if(File::exists($prev_avatar_th)){File::delete($prev_avatar_th);}
+             if(File::exists($prev_avatar) && $prev_avatar != 'avatar.png'){File::delete($prev_avatar);}
+             if(File::exists($prev_avatar_th)  && $prev_avatar_th != 'avatar.png'){File::delete($prev_avatar_th);}
             
 
         }

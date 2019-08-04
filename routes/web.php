@@ -6,7 +6,7 @@
 
 Route::get('/', 'PagesController@home')->name('welcome');
 Route::get('products', 'PagesController@products')->name('products');
-Route::get('show/{slug}', 'PagesController@singleproduct')->name('singleproduct');
+Route::get('show/{slug}', 'SingleNoteController@singlenote')->name('singleproduct');
 Route::get('notesbycat/{cat}', 'PagesController@notesbycat')->name('notesbycat');
 Route::get('thankyou', 'PagesController@thankyou')->name('thankyou');
 
@@ -38,6 +38,14 @@ Route::group(['prefix' => 'notes', 'middleware'=>'auth'], function () {
     Route::post('storenotes', 'NoteController@storenotes')->name('storenotes');
 
     Route::post('storereview', 'ReviewController@storereview')->name('storereview');
+
+
+
+
+
+
+    Route::get('/storerating', 'StarController@storerating')->name('storerating');
+    Route::get('/storerecs', 'RecommendController@storerecommend')->name('storerecommend');
 
 });
 

@@ -24,8 +24,10 @@ class ReviewController extends Controller
         $review->save();
 
 
-        Session::flash('success', 'Your review has been added suvccessfully');
-        return back();
+        $msg = "Your Review have been added successfully";
+        $review = $review;
+
+        return response()->json(array('msg'=> $msg, 'review'=>$review), 200);
 
     }
 }

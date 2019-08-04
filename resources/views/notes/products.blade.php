@@ -49,32 +49,48 @@
                         <h4 class="title"> {{ $note->name }}  </h4>
                         <div class="rating-wrap  mb-2">
                             <ul class="rating-stars">
-                                <li style="width:80%" class="stars-active">
-                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </li>
-                                <li>
-                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i> <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </li>
+                                
+                                    @if($note->getStars() > 0) 
+                                      <li class="">
+                                        <?php  for($i = 1; $i <= $note->getStars(); $i++) { ?>
+                                            <i class="fa fa-star st starsfor" style="font-size: 15px; color: brown;"></i>
+                                        <?php  }  ?>
+                                      
+                                        <?php
+                                          $rm = 5 - $note->getStars(); 
+                                          for($i = 1; $i <= $rm; $i++) {
+                                        ?>
+                                          <i class="fa fa-star st starsnot" style="font-size: 15px;"></i>
+                                        <?php } ?>
+                                      </li>
+
+                                  @elseif($note->getStars() == 0)
+
+                                    <li>
+                                      <i class="fa fa-star"></i> 
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i>
+                                      <i class="fa fa-star"></i> 
+                                      <i class="fa fa-star"></i>
+
+                                    </li>
+                                  @endif
                             </ul>
-                            <div class="label-rating">132 reviews</div>
-                            <div class="label-rating">154 orders </div>
+                            <div class="label-rating ml-3">{{ $note->reviews->count() }} reviews</div>
+                            <div class="label-rating ml-3">{{ $note->views }} views</div>
                         </div> <!-- rating-wrap.// -->
                         <p> {{ $note->details }} </p>
                         <dl class="dlist-align">
-                          <dt>Color</dt>
-                          <dd>Black and white</dd>
+                          <dt>Pages</dt>
+                          <dd>{{ $note->pages }} pages</dd>
                         </dl>  <!-- item-property-hor .// -->
                         <dl class="dlist-align">
-                          <dt>Material</dt>
-                          <dd>Syntetic, wooden</dd>
+                          <dt>Type</dt>
+                          <dd>{{ $note->doctype  }} document</dd>
                         </dl>  <!-- item-property-hor .// -->
                         <dl class="dlist-align">
-                          <dt>Delivery</dt>
-                          <dd>Russia, USA, and Europe</dd>
+                          <dt>By</dt>
+                          <dd>{{ $note->user->name }}</dd>
                         </dl>  <!-- item-property-hor .// -->
 
                 </article> <!-- col.// -->

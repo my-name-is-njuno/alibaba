@@ -6,8 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Note;
 use App\Cat;
+use App\Star;
+use App\Recommend;
+use App\View;
+
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Session;
+use Auth;
 
 class PagesController extends Controller
 {
@@ -84,11 +89,7 @@ class PagesController extends Controller
     }
 
 
-    public function singleproduct($slug)
-    {
-        $note = Note::where('slug', $slug)->firstOrFail();
-        return view('notes/singleproduct', compact('note'));
-    }
+    
 
     public function checkout()
     {
